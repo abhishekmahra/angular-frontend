@@ -1,0 +1,224 @@
+.header {
+    display: flex;
+    opacity: 1;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    backdrop-filter: blur(100px);
+    background-color:rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(229, 231, 235, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    max-width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  
+  .logo img {
+    width: 174px;
+    height: 40px;
+  }
+  
+  .search-filters {
+    opacity: 1;
+    flex: 1;
+    z-index: 100;
+    max-width: 738px;
+    padding: 3px;
+    background: #FFF9F9;
+    border: 1px solid #00000014;
+    border-radius: 8px;
+    opacity: 1;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1rem;
+  }
+  
+  .filter-item1,
+  .filter-item2,
+  .filter-item3 {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 0 5px;
+  }
+  
+  .filter-item1 label,
+  .filter-item2 label,
+  .filter-item3 label {
+    margin-left: 4px;
+    text-align: left;
+    font: normal normal bold 12px/21px "Proxima Nova", sans-serif;
+    letter-spacing: 0px;
+    color: #00000099;
+    text-transform: uppercase;
+  }
+  
+  .filter-input {
+    position: relative;
+    font-family: "Proxima Nova", sans-serif;
+    font-weight: 500;
+  }
+  
+  .filter-input input {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #D1D5DB;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #111827;
+    background-color: #F9FAFB;
+    cursor: pointer;
+    box-sizing: border-box;
+  }
+  
+  .filter-input input::placeholder {
+    color: #9CA3AF;
+  }
+  
+  .filter-input input:hover {
+    border-color: #9CA3AF;
+  }
+  
+  .filter-input i {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6B7280;
+    font-size: 12px;
+  }
+  
+  .user-profile .profile-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #D1D5DB;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .user-profile .profile-button i {
+    color: #6B7280;
+    font-size: 18px;
+  }
+  
+  .user-profile .profile-button:hover {
+    background-color: #F3F4F6;
+    border-color: #9CA3AF;
+  }
+  
+  @media (max-width: 1200px) {
+    .header {
+      max-width: 100%;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .header {
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  
+    .search-filters {
+      order: 3;
+      margin-top: 15px;
+      width: 100%;
+      max-width: none;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: row;
+      align-items: center;
+      padding: 12px 16px;
+    }
+  
+    .logo {
+      margin-bottom: 0;
+    }
+  
+    .search-filters {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: white;
+      padding: 16px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+  
+    .search-filters.active {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+  
+    .filter-item1,
+    .filter-item2,
+    .filter-item3 {
+      margin: 5px 0;
+    }
+  
+    .user-profile {
+      position: static;
+      margin-left: auto;
+    }
+  
+    .user-profile .profile-button {
+      width: 36px;
+      height: 36px;
+    }
+  
+    .user-profile .profile-button i {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    body {
+      padding-top: 60px; 
+    }
+  
+    .header {
+      padding: 10px 12px;
+    }
+  
+    .logo img {
+      width: 130px;
+      height: auto;
+    }
+  
+    .user-profile .profile-button {
+      width: 32px;
+      height: 32px;
+    }
+  
+    .user-profile .profile-button i {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .logo img {
+      width: 110px;
+    }
+  
+    .user-profile .profile-button {
+      width: 28px;
+      height: 28px;
+    }
+  
+    .user-profile .profile-button i {
+      font-size: 12px;
+    }
+  }

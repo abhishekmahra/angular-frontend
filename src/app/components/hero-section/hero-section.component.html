@@ -1,0 +1,38 @@
+<section class="hero-section">
+    <div class="carousel">
+      <div class="carousel-inner">
+        <!-- Previous Slide -->
+        <div class="carousel-item prev">
+          <img [src]="carouselItems[getSlideIndex(-1)].imageUrl" alt="Previous slide" />
+        </div>
+        <!-- Current Slide -->
+        <div class="carousel-item current">
+          <img [src]="carouselItems[currentSlide].imageUrl" alt="Current slide" />
+          <div class="overlay-text">
+            <h1>{{carouselItems[currentSlide].title}}</h1>
+            <p>{{carouselItems[currentSlide].subtitle}}</p>
+          </div>
+        </div>
+        <!-- Next Slide -->
+        <div class="carousel-item next">
+          <img [src]="carouselItems[getSlideIndex(1)].imageUrl" alt="Next slide" />
+        </div>
+      </div>
+      <!-- Carousel Controls -->
+      <button class="carousel-control prev" (click)="prevSlide()">&#10094;</button>
+      <button class="carousel-control next" (click)="nextSlide()">&#10095;</button>
+    </div>
+  
+    <!-- Genre Browse Section -->
+    <div class="genre-browse">
+      <h2>Browse events by genre</h2>
+      <div class="genre-icons">
+        <div *ngFor="let genre of genres" class="genre-item">
+          <img [src]="genre.icon" alt="{{ genre.name + ' icon' }}" class="icon" />
+          <h3>{{genre.name}}</h3>
+          <p>{{genre.events}} events</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  

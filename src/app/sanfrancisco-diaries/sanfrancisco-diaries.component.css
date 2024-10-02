@@ -1,0 +1,95 @@
+.simple-div {
+  font-family: Arial, sans-serif;
+  background: #E00046 0% 0% no-repeat padding-box;
+  color: white;
+  margin: 0;
+  padding: clamp(1.5rem, 5vw, 4rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  gap: clamp(1rem, 3vw, 2rem);
+}
+
+.left-image-block {
+  padding: clamp(0.5rem, 2vw, 1rem);
+  width: clamp(120px, 15vw, 178px);
+  height: clamp(120px, 15vw, 178px);
+  flex-shrink: 0;
+}
+
+.left-image-block img {
+  max-width: 100%;
+  height: auto;
+}
+
+.text-block {
+  padding: clamp(0.5rem, 2vw, 1rem);
+  flex-grow: 1;
+}
+
+.text-block p {
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  margin-bottom: clamp(0.5rem, 2vw, 1rem);
+  line-height: 1.5;
+}
+
+.text-block h1 {
+  font-size: clamp(1.3rem, 4vw, 2rem);
+  margin-bottom: clamp(0.5rem, 2vw, 1rem);
+  line-height: 1.2;
+}
+
+.down-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(0.5rem, 2vw, 1rem);
+  margin-top: clamp(0.5rem, 2vw, 1rem);
+}
+
+.down-buttons button {
+  border: none;
+  color: #E00046;
+  padding: clamp(0.5rem, 1.5vw, 0.7rem) clamp(1rem, 2vw, 1.2rem);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 12px;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  background-color: white;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.down-buttons button:hover {
+  background-color: #ff1a66;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .main-block {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .left-image-block {
+    margin-bottom: clamp(0.5rem, 2vw, 1rem);
+  }
+
+  .down-buttons {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .simple-div {
+    padding: clamp(1rem, 4vw, 1.5rem);
+  }
+}

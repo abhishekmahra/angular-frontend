@@ -1,0 +1,72 @@
+<section class="explore-events">
+    <h2>Explore events</h2>
+    <div class="explore-container">
+      <aside class="filters">
+        <div class="map-explore">
+            <img src="assets/map.png" alt="Map">
+            <p>EXPLORE EVENTS ON MAP</p>
+        </div>
+        <div class="category-filter">
+            <div class="heading-text">
+                <div class="heading">
+                    <h2>Category</h2>
+                </div>
+                <div class="button">
+                    <button class="clear-btn" (click)="clearFilters()"><h3>CLEAR</h3></button>
+                </div>
+            </div>
+
+          <ul>
+            <li *ngFor="let category of categories">
+              <label>
+                <input type="checkbox" [checked]="selectedCategories.includes(category)" (change)="onCategoryChange(category)">
+                {{ category }}
+              </label>
+            </li>
+          </ul>
+        </div>
+        <div class="sort-by">
+          <h3>Sort by</h3>
+        </div>
+        <div class="price-range">
+            <div class="heading">
+                 <h3>Price Range</h3>
+            </div>
+            <div class="inputs">
+                <input type="number" placeholder="Min amount" readonly>
+                <input type="number" placeholder="Max amount" readonly>
+            </div>
+        </div>
+      </aside>
+      <div class="events-section">
+        <div class="search-bar">
+            <input type="text" [(ngModel)]="searchTerm" (input)="onSearch()" placeholder="Search events by name...">
+        </div>
+      <main class="events-grid">
+        <div class="event-card" *ngFor="let event of filteredEvents">
+
+                <img [src]="event.imageUrl" alt="{{ event.title }}">
+                <div class="event-details">
+                  <h3>{{ event.title }}</h3>
+                  <p class="event-date">
+                    <i class="icon-calendar"></i> {{ event.date }}
+                  </p>
+                  <p class="event-location">
+                    <i class="icon-location"></i> {{ event.location }}
+                  </p>
+                  <div class="event-tags">
+                    <span class="tag" *ngFor="let tag of event.tags">{{ tag }}</span>
+                  </div>
+                  <div class="event-price-buy">
+                    <span class="price"> <h5>From ${{ event.price.toFixed(2) }}</h5></span>
+                    <button class="buy-now">BUY NOW</button>
+                  </div>
+                </div>
+        </div>
+      </main>
+    </div>
+    </div>
+    <div class="pagination">
+      <!-- Add pagination buttons here -->
+    </div>
+  </section>
