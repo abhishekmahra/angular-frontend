@@ -29,11 +29,14 @@ So, the setup order is:
 2. **Run `npm install`**
 3. **Run `ng serve`**
 
+## NOTE:
+### I tried to implement the search and filer functionality also .... where a user can do search the events using a search bar, user can type the name of events and also using the category checkbox user can filter the events.
+
 ## Here are the screenshots of the web app in various devices.
 
-### In Web
+## In Web
 ![localhost_4200_ (1)-min](https://github.com/user-attachments/assets/3e32738d-3dac-41b4-a904-1d70bfd41ccb)
-### In Phone
-![localhost_4200_(iPhone 14 Pro Max)-min](https://github.com/user-attachments/assets/469bf253-5b1a-45cf-85c1-c69456e5bade)
 ## In Tablet
 ![localhost_4200_(iPad Mini)-min](https://github.com/user-attachments/assets/65918ee6-1273-4fee-bb4b-0c35c3b7b008)
+## In Phone
+![localhost_4200_(iPhone 14 Pro Max)-min](https://github.com/user-attachments/assets/469bf253-5b1a-45cf-85c1-c69456e5bade)
