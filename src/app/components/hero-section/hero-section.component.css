@@ -221,13 +221,8 @@
       height: 300px;
     }
   
-    .overlay-text {
-      right: 30px;
-      max-width: 60%;
-    }
-  
-    .overlay-text h1 {
-      font-size: 2em;
+    .overlay-text{
+      display: none;
     }
   
     .overlay-text p {
@@ -287,12 +282,8 @@
       height: 200px;
     }
   
-    .overlay-text h1 {
-      font-size: 1.2em;
-    }
-  
-    .overlay-text p {
-      font-size: 0.8em;
+    .overlay-text{
+      display: none;
     }
   
     .genre-item {
