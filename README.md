@@ -29,6 +29,9 @@ So, the setup order is:
 2. **Run `npm install`**
 3. **Run `ng serve`**
 
+## NOTE:
+### I tried to implement the search and filer functionality also .... where a user can do search the events using a search bar, user can type the name of events and also using the category checkbox user can filter the events.
+
 ## Here are the screenshots of the web app in various devices.
 
 ### In Web
