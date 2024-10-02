@@ -1,27 +1,39 @@
 # EventBookingApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.14.
+This project was generated with [Angular CLI]
 
-## Development server
+## Getting Started
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### 1. Clone the repository
 
-## Code scaffolding
+Clone the repository to your local machine:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+git clone <repository-url>
+cd <project-folder>
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Steps to Set Up the Project
 
-## Running unit tests
+### 1. **Run `nvm use` First**
+   You should run `nvm use` first before doing any other setup steps, including installing dependencies. This ensures you are using the correct Node.js version specified in the `.nvmrc` file.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### 2. **Install Dependencies**
+   After you switch to the correct Node.js version using `nvm`, run `npm install` to install all necessary dependencies.
 
-## Running end-to-end tests
+### 3. **Run the Application**
+   Once the dependencies are installed, you can proceed to run the Angular application using `ng serve`.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+So, the setup order is:
 
-## Further help
+1. **Run `nvm use`**
+2. **Run `npm install`**
+3. **Run `ng serve`**
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Here are the screenshots of the web app in various devices.
+
+### In Web
+![localhost_4200_ (1)-min](https://github.com/user-attachments/assets/3e32738d-3dac-41b4-a904-1d70bfd41ccb)
+### In Phone
+![localhost_4200_(iPhone 14 Pro Max)-min](https://github.com/user-attachments/assets/469bf253-5b1a-45cf-85c1-c69456e5bade)
+## In Tablet
+![localhost_4200_(iPad Mini)-min](https://github.com/user-attachments/assets/65918ee6-1273-4fee-bb4b-0c35c3b7b008)
