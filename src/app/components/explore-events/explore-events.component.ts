@@ -17,7 +17,7 @@ interface Event {
 })
 export class ExploreEventsComponent implements OnInit {
   categories: string[] = ['Music', 'Parties', 'Meetups', 'Conference', 'Trekking/Hiking', 'Adventure', 'Comedy', 'Traditional/Ethnic', 'Performing/ Visual Arts', 'Foods & Drinks'];
-  selectedCategories: string[] = [];
+  selectedCategories: string[] = ['Music'];
   sortBy: string = 'date'; // Default sorting
   minPrice: number = 0;
   maxPrice: number = Infinity; // Use Infinity to indicate no upper limit
